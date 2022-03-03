@@ -9,7 +9,7 @@ class Fuel(Db):
 
         config = dotenv_values('.env')
         apiKey = config['API_KEY']
-        selffirebaseAuth = config['FIREBASE_AUTH']
+        self.firebaseAuth = config['FIREBASE_AUTH']
 
         stationId = 'fe50b4a5-84c9-4812-a0b7-4b29f589e1e2'
 
